@@ -6,21 +6,18 @@
  * ---------------------------------------------------------*/
 
 #include <iostream> 
+#include <string> 
 
 using namespace std;
 
 int main() {
-    
-    int firstInput;
-    int secondInput;
-    int thirdInput;
 
-    int firstResult;
-    int secondResult;
-    int thirdResult;
+    int firstInput, secondInput, thirdInput;
+
+    int firstResult, secondResult, thirdResult;
 
     // [Collecting User Input]
-    
+
     std::cout << "First Input: ";
     std::cin >> firstInput;
     std::cout << "Second Input: ";
@@ -80,6 +77,59 @@ int main() {
 
         }
     }
+
+    else if ((firstInput == secondInput) && (firstInput > thirdInput))
+    {
+
+        firstResult = firstInput;
+        secondResult = secondInput;
+        thirdResult = thirdInput;
+
+    }
+
+    else if ((firstInput == secondInput) && (firstInput < thirdInput))
+    {
+
+        firstResult = thirdInput;
+        secondResult = secondInput;
+        thirdResult = firstInput;
+
+    }
+
+    else if ((firstInput > secondInput) && (firstInput == thirdInput))
+    {
+
+        firstResult = firstInput;
+        secondResult = thirdInput;
+        thirdResult = secondInput;
+
+    }
+
+    else if ((firstInput < secondInput) && (firstInput == thirdInput))
+    {
+
+        firstResult = secondInput;
+        secondResult = thirdInput;
+        thirdResult = firstInput;
+
+    }
+
+    else if ((secondInput == thirdInput) && (firstInput > secondInput))
+    {
+
+        firstResult = firstInput;
+        secondResult = secondInput;
+        thirdResult = thirdInput;
+    }
+
+    else if ((secondInput == thirdInput) && (firstInput < secondInput))
+    {
+
+        firstResult = secondInput;
+        secondResult = thirdInput;
+        thirdResult = firstInput;
+    }
+
 
     // [Displaying User Input]
 
