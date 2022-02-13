@@ -5,8 +5,7 @@
  * Purpose: Display user generated input in descending order.
  * ---------------------------------------------------------*/
 
-#include <iostream> 
-#include <string> 
+#include <iostream>  
 
 using namespace std;
 
@@ -18,19 +17,21 @@ int main() {
 
     // [Collecting User Input]
     
-    std::cout << "First Input: ";
-    std::cin >> firstInput;
-    std::cout << "Second Input: ";
-    std::cin >> secondInput;
-    std::cout << "Third Input: ";
-    std::cin >> thirdInput;
+    cout << "First Input: ";
+    cin >> firstInput;
+    cout << "Second Input: ";
+    cin >> secondInput;
+    cout << "Third Input: ";
+    cin >> thirdInput;
 
     /*
+    
     [Input Logic]
     Using nested Loops to compare the first input variable collected
     by the user to determine if it has a greater value than the other two.
     Then storing the values in descending order into the 'result' variables,
     to be displayed at the end.
+
     */
 
     if ((firstInput > secondInput) && (firstInput > thirdInput))
@@ -129,17 +130,25 @@ int main() {
         secondResult = thirdInput;
         thirdResult = firstInput;
     }
+    
+    else if ((firstInput == secondInput) && (firstInput == thirdInput) && (secondInput == thirdInput))
+    {
+
+        firstResult = firstInput;
+        secondResult = secondInput;
+        thirdResult = thirdInput;
+    }
 
 
     // [Displaying User Input]
 
-    std::cout << "=================" << endl;
-    std::cout << "" << endl;
-    std::cout << firstResult << endl;
-    std::cout << secondResult << endl;
-    std::cout << thirdResult << endl;
-    std::cout << "" << endl;
-    std::cout << "=================" << endl;
+    cout << "=================" << endl;
+    cout << "" << endl;
+    cout << firstResult << endl;
+    cout << secondResult << endl;
+    cout << thirdResult << endl;
+    cout << "" << endl;
+    cout << "=================" << endl;
 
     return 0;
 }
