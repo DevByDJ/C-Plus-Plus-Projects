@@ -1,7 +1,7 @@
 /* --------------------------------------------------------
  *    file: rectangle.cpp
  *   class: COP 2006
- *  author:
+ *  author: Danny Joseph
  * purpose: debugging lab
  * -------------------------------------------------------- */
 #include <iostream>
@@ -86,12 +86,8 @@ Point getPoint()
     Point retPoint = { 0.0, 0.0 };
 
     // prompt for and assign user input to the X,Y of the return point
-    float x;
-    cin >> x;
-    float y;
-    cin >> y;
-
-    retPoint = { x, y };
+    cout << "Please input the X and Y coordinates: ";
+    cin >> retPoint.x >> retPoint.y;
 
     return retPoint;
 }
@@ -107,11 +103,13 @@ Rectangle getRectangle()
 
     // prompt for and assign the lower-left point to the return rectangle
     Point lowerLeft = getPoint();
+    retRectangle.lowerLeft = lowerLeft;
 
     // prompt for and assign the upper-right point to the return rectangle
     Point upperRight = getPoint();
+    retRectangle.upperRight = upperRight;
 
-    retRectangle = { {lowerLeft},{upperRight} };
+    
 
     return retRectangle;
 }
