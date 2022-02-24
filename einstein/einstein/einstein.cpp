@@ -16,7 +16,7 @@ int main()
     bool gameOver = false;
 
     // The Instructions..
-    cout << "\nEnter a 3-digit number where the firt and last digits differ by two or more: 541";
+    cout << "\nEnter a 3-digit number where the first and last digits differ by two or more: 541";
     cout << "\n541 -- 1) original";
     cout << "\n145 -- 2) reversed";
     cout << "\n396 -- 3) difference of #1 and #2";
@@ -33,7 +33,7 @@ int main()
             b.) The input value's first and last digit must differ by two or more.
 
             Once the requirements are met, the loop will end.
-        */ 
+        */
 
         bool originalNumberVerified = false;
         int savedOriginalNumber = 0;
