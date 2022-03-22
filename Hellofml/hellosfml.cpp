@@ -13,11 +13,11 @@
 // window properties
 const int WINDOW_WIDTH = 640;
 const int WINDOW_HEIGHT = 480;
-const sf::Color WINDOW_COLOR = sf::Color::Black;
+const sf::Color WINDOW_COLOR = sf::Color::White;
 
 // drawing properties
 const float FRAME_RATE = (1.0/30.0) * 1000.0;       // FPS in ms
-const sf::Color BALL_COLOR = sf::Color::Red;
+const sf::Color BALL_COLOR = sf::Color::Blue;
 
 // These are just for fun
 // speed that the can accelerate at to span window in
