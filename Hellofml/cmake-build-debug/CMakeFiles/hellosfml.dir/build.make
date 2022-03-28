@@ -68,34 +68,34 @@ include CMakeFiles/hellosfml.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/hellosfml.dir/flags.make
 
-CMakeFiles/hellosfml.dir/hellosfml.cpp.obj: CMakeFiles/hellosfml.dir/flags.make
-CMakeFiles/hellosfml.dir/hellosfml.cpp.obj: CMakeFiles/hellosfml.dir/includes_CXX.rsp
-CMakeFiles/hellosfml.dir/hellosfml.cpp.obj: ../hellosfml.cpp
-CMakeFiles/hellosfml.dir/hellosfml.cpp.obj: CMakeFiles/hellosfml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hellosfml.dir/hellosfml.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hellosfml.dir/hellosfml.cpp.obj -MF CMakeFiles\hellosfml.dir\hellosfml.cpp.obj.d -o CMakeFiles\hellosfml.dir\hellosfml.cpp.obj -c C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\hellosfml.cpp
+CMakeFiles/hellosfml.dir/moveball.cpp.obj: CMakeFiles/hellosfml.dir/flags.make
+CMakeFiles/hellosfml.dir/moveball.cpp.obj: CMakeFiles/hellosfml.dir/includes_CXX.rsp
+CMakeFiles/hellosfml.dir/moveball.cpp.obj: ../moveball.cpp
+CMakeFiles/hellosfml.dir/moveball.cpp.obj: CMakeFiles/hellosfml.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hellosfml.dir/moveball.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hellosfml.dir/moveball.cpp.obj -MF CMakeFiles\hellosfml.dir\moveball.cpp.obj.d -o CMakeFiles\hellosfml.dir\moveball.cpp.obj -c C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\moveball.cpp
 
-CMakeFiles/hellosfml.dir/hellosfml.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hellosfml.dir/hellosfml.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\hellosfml.cpp > CMakeFiles\hellosfml.dir\hellosfml.cpp.i
+CMakeFiles/hellosfml.dir/moveball.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hellosfml.dir/moveball.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\moveball.cpp > CMakeFiles\hellosfml.dir\moveball.cpp.i
 
-CMakeFiles/hellosfml.dir/hellosfml.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hellosfml.dir/hellosfml.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\hellosfml.cpp -o CMakeFiles\hellosfml.dir\hellosfml.cpp.s
+CMakeFiles/hellosfml.dir/moveball.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hellosfml.dir/moveball.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\moveball.cpp -o CMakeFiles\hellosfml.dir\moveball.cpp.s
 
 # Object files for target hellosfml
 hellosfml_OBJECTS = \
-"CMakeFiles/hellosfml.dir/hellosfml.cpp.obj"
+"CMakeFiles/hellosfml.dir/moveball.cpp.obj"
 
 # External object files for target hellosfml
 hellosfml_EXTERNAL_OBJECTS =
 
-hellosfml.exe: CMakeFiles/hellosfml.dir/hellosfml.cpp.obj
+hellosfml.exe: CMakeFiles/hellosfml.dir/moveball.cpp.obj
 hellosfml.exe: CMakeFiles/hellosfml.dir/build.make
 hellosfml.exe: /SFML-2.5.1/lib/libsfml-graphics-s-d.a
 hellosfml.exe: /SFML-2.5.1/lib/libsfml-window-s-d.a
 hellosfml.exe: /SFML-2.5.1/lib/libsfml-system-s-d.a
-hellosfml.exe: /SFML-2.5.1/lib/libfreetype.a
+hellosfml.exe: C:/SFML-2.5.1/lib/libfreetype.a
 hellosfml.exe: CMakeFiles/hellosfml.dir/linklibs.rsp
 hellosfml.exe: CMakeFiles/hellosfml.dir/objects1.rsp
 hellosfml.exe: CMakeFiles/hellosfml.dir/link.txt

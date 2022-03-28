@@ -14,5 +14,5 @@ link_directories(${SFML_LIBRARY_DIR})
 find_package(SFML 2.5.1 COMPONENTS system window graphics
         network audio)
 
-add_executable(hellosfml hellosfml.cpp)
+add_executable(hellosfml moveball.cpp)
 target_link_libraries(hellosfml sfml-graphics sfml-window sfml-system)

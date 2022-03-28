@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/hellosfml.dir/hellosfml.cpp.obj"
-  "CMakeFiles/hellosfml.dir/hellosfml.cpp.obj.d"
+  "CMakeFiles/hellosfml.dir/moveball.cpp.obj"
+  "CMakeFiles/hellosfml.dir/moveball.cpp.obj.d"
   "hellosfml.exe"
   "hellosfml.exe.manifest"
   "hellosfml.pdb"

@@ -128,29 +128,29 @@ hellosfml/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\hellosfml.dir\build.make CMakeFiles/hellosfml.dir/build
 .PHONY : hellosfml/fast
 
-hellosfml.obj: hellosfml.cpp.obj
-.PHONY : hellosfml.obj
+moveball.obj: moveball.cpp.obj
+.PHONY : moveball.obj
 
 # target to build an object file
-hellosfml.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hellosfml.dir\build.make CMakeFiles/hellosfml.dir/hellosfml.cpp.obj
-.PHONY : hellosfml.cpp.obj
+moveball.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\hellosfml.dir\build.make CMakeFiles/hellosfml.dir/moveball.cpp.obj
+.PHONY : moveball.cpp.obj
 
-hellosfml.i: hellosfml.cpp.i
-.PHONY : hellosfml.i
+moveball.i: moveball.cpp.i
+.PHONY : moveball.i
 
 # target to preprocess a source file
-hellosfml.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hellosfml.dir\build.make CMakeFiles/hellosfml.dir/hellosfml.cpp.i
-.PHONY : hellosfml.cpp.i
+moveball.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\hellosfml.dir\build.make CMakeFiles/hellosfml.dir/moveball.cpp.i
+.PHONY : moveball.cpp.i
 
-hellosfml.s: hellosfml.cpp.s
-.PHONY : hellosfml.s
+moveball.s: moveball.cpp.s
+.PHONY : moveball.s
 
 # target to generate assembly for a file
-hellosfml.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hellosfml.dir\build.make CMakeFiles/hellosfml.dir/hellosfml.cpp.s
-.PHONY : hellosfml.cpp.s
+moveball.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\hellosfml.dir\build.make CMakeFiles/hellosfml.dir/moveball.cpp.s
+.PHONY : moveball.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... hellosfml
-	@echo ... hellosfml.obj
-	@echo ... hellosfml.i
-	@echo ... hellosfml.s
+	@echo ... moveball.obj
+	@echo ... moveball.i
+	@echo ... moveball.s
 .PHONY : help
 
 
