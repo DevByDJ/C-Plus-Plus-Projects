@@ -1,0 +1,26 @@
+# ninja log v5
+0	466	6701974272003825	CMakeFiles/hellosfml.dir/moveball.cpp.obj	191b4fffd708c3fd
+468	902	6701974276325211	hellosfml.exe	a2ec359e9b5fb223
+2	533	6701989520469464	CMakeFiles/hellosfml.dir/moveball.cpp.obj	191b4fffd708c3fd
+534	1020	6701989525308024	hellosfml.exe	a2ec359e9b5fb223
+3	497	6702010402562421	CMakeFiles/hellosfml.dir/moveball.cpp.obj	191b4fffd708c3fd
+3	940	6702166172115594	CMakeFiles/hellosfml.dir/moveball.cpp.obj	191b4fffd708c3fd
+941	1459	6702166177265735	hellosfml.exe	a2ec359e9b5fb223
+2	502	6702169576022362	CMakeFiles/hellosfml.dir/moveball.cpp.obj	191b4fffd708c3fd
+502	947	6702169580433854	hellosfml.exe	a2ec359e9b5fb223
+2	511	6702170084037339	CMakeFiles/hellosfml.dir/moveball.cpp.obj	191b4fffd708c3fd
+511	964	6702170088533857	hellosfml.exe	a2ec359e9b5fb223
+2	501	6702171525793742	CMakeFiles/hellosfml.dir/moveball.cpp.obj	191b4fffd708c3fd
+501	941	6702171530158198	hellosfml.exe	a2ec359e9b5fb223
+2	492	6702172215207453	CMakeFiles/hellosfml.dir/moveball.cpp.obj	191b4fffd708c3fd
+492	929	6702172219534605	hellosfml.exe	a2ec359e9b5fb223
+3	501	6702172425496320	CMakeFiles/hellosfml.dir/moveball.cpp.obj	191b4fffd708c3fd
+501	938	6702172429827093	hellosfml.exe	a2ec359e9b5fb223
+2	611	6702189482111480	CMakeFiles/hellosfml.dir/moveball.cpp.obj	191b4fffd708c3fd
+611	1083	6702189486869349	hellosfml.exe	a2ec359e9b5fb223
+2	524	6702190617813947	CMakeFiles/hellosfml.dir/moveball.cpp.obj	191b4fffd708c3fd
+524	996	6702190622491266	hellosfml.exe	a2ec359e9b5fb223
+3	506	6702192280534120	CMakeFiles/hellosfml.dir/moveball.cpp.obj	191b4fffd708c3fd
+506	966	6702192285100961	hellosfml.exe	a2ec359e9b5fb223
+3	596	6702194242741233	CMakeFiles/hellosfml.dir/moveball.cpp.obj	191b4fffd708c3fd
+597	1060	6702194247353285	hellosfml.exe	a2ec359e9b5fb223
