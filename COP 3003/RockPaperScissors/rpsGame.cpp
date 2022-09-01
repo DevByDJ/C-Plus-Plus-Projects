@@ -5,6 +5,7 @@ using namespace std;
 
 int userScore, cpuScore;
 
+// -- Function Initialization --
 void displayMainScreen ();
 int userDecisionMaking(int &userChoice);
 int cpuDecisionMaking(int &cpuChoice, int randomChoice, string cpu);
@@ -13,6 +14,7 @@ void displayScore(int &userScore, int &cpuScore);
 
 int main () 
 {
+
     bool gameOver = false;
 
     while(!gameOver)
@@ -23,16 +25,17 @@ int main ()
 
         string cpu, userDecision;
 
+
         displayMainScreen();
 
+        // -- Function handles the input given by the user --
         userDecisionMaking(userChoice);
 
+        // -- Function handles the input given by the cpu --
         cpuDecisionMaking(cpuChoice, randomChoice, cpu);
 
         // -- DETERMINES WHO WINS BASED ON 'userChoice and cpuChoice' --
-
         decisionMade( userChoice, cpuChoice, userScore, cpuScore);
-
 
         // -- DISPLAY SCORE --
         displayScore(userScore, cpuScore);
@@ -67,6 +70,15 @@ void displayMainScreen()
     
 }
 
+/*
+    @param int userChoice: referenced variable passed along functions that retrieves and assigns the users decision.
+
+    @description: This function requires an integer variable "userChoice" as a parameter. We first determine
+                  the users input given by a R, P or S then assign that string into an integer variable so we
+                  can compare it later. We then return the "userChoice" value.
+
+    @requirements: The user has to enter R, P or S! If they do not, restart the input loop until they do!
+*/
 int userDecisionMaking(int &userChoice)
 {
 
@@ -107,6 +119,16 @@ int userDecisionMaking(int &userChoice)
 
 }
 
+/*
+    @param int cpuChoice: referenced variable passed along functions that retrieves and assigns the cpu decision.
+           int randomChoice: used to generate a random integer between 1-3 which we use to determine the Rock,Paper, Scissor.
+           string cpu: Display purposes!
+
+    @description: This function requires an integer variable "cpuChoice" as a parameter. We first determine
+                  the cpu's decision by randomly generating a number between 1 and 3. We then use that value to determine a
+                  Rock(1), Paper(2), Scissors(3) decision and return that value.
+
+*/
 int cpuDecisionMaking(int &cpuChoice, int randomChoice, string cpu)
 {
     randomChoice = rand() % 3 + 1;
@@ -132,6 +154,21 @@ int cpuDecisionMaking(int &cpuChoice, int randomChoice, string cpu)
 
 }
 
+/*
+    @param int userChoice: referenced variable passed along functions that retrieves and assigns the users decision.
+           int cpuChoice: referenced variable passed along functions that retrieves and assigns the cpu decision.
+           int userScore: used to store the score of the user which is incremented by 1 each win.
+           int cpuScore: used to store the score of the cpu which is incremented by 1 each win.
+
+    @description: This function determines the logic of how a user or cpu can win the game. Then it increments the
+                  winners score by 1 and returns the value of both the user and cpu.
+
+    @requirements: [Winning Combinations] - Rock(1) beats Scissors(3)
+                                          - Paper(2) beats Rock(1)
+                                          - Scissors(3) beats Paper(2)
+
+                    ANYTHING ELSE         - DRAW!
+*/
 int decisionMade(int &userChoice, int &cpuChoice, int &userScore, int &cpuScore)
 {
 
