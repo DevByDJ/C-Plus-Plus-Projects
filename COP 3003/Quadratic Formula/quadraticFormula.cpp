@@ -19,11 +19,7 @@ int main() {
     while(!gameOver)
     {
         // -- Quadratic Formula Variables --
-        float a;
-        float b;
-        float c;
-        float firstStandardSolution;
-        float secondStandardSolution;
+        float a, b, c, firstStandardSolution, secondStandardSolution;
         string userDecision;
 
 
