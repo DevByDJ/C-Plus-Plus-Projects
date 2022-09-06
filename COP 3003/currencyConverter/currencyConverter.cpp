@@ -91,7 +91,7 @@ int main ()
 /**
 * * getUSDAmount()
 * ? This Function gets user input as [userDollarAmount] and stores as a 'double'.
-* ! [IF THE USER INPUTS ANYTHING BELOW ZERO IT WILL RESTART INPUT LOOP] 
+* ! REQUIREMENTS: [IF THE USER INPUTS ANYTHING BELOW ZERO IT WILL RESTART INPUT LOOP] 
 
 * @param userDollarAmount - Referenced variable that will store user input 
 * @param validUSDInput - Determines if the input is valid. True: Breaks Loop || False: Restarts Loop
@@ -118,14 +118,13 @@ double getUSDAmount(double &userDollarAmount, bool validUSDInput)
 
 
 /**
-* TODO : FILL IN PARAMS!
 * * int getUserChoices()
-* ? This Function gets user input as [userDollarAmount] and stores as a 'double'.
-* ! [IF THE USER INPUTS ANYTHING BELOW ZERO IT WILL RESTART INPUT LOOP] 
+* ? This Function gets 5 user inputs and stores each in an int array [userChoices[]].
+* ! REQUIREMENTS: [IF THE USER INPUTS ANYTHING BELOW ZERO AND OVER 10 IT WILL RESTART THE INPUT LOOP] 
 
-* @param userChoices[] -  
-* @param validCurrencyChoices - 
-* @param validUserChoice -
+* @param userChoices[] -  an integer array that stores the user's choice between 1-10 in a 5 element array.
+* @param validCurrencyChoices - a boolean that returns true or false if the user chose a number between 1-10.
+* @param validUserChoice - a boolean that returns true or false if the conditions were met to leave the loop.
 */
 int* getUserChoices(int userChoices[], bool validCurrencyChoices, bool validUserChoice)
 {
@@ -166,16 +165,15 @@ int* getUserChoices(int userChoices[], bool validCurrencyChoices, bool validUser
 }
 
 /**
-* TODO: FILL IN PARAMS!
 * * double currencyConverter()
 
 * ? This function declares the values of 'conversion rate', 'name of the currency' and 'the amount after conversion' for each currency,
 * ?     then it assigns the amount after conversion into an array [foriegnValues] to be displayed in the results() function.
 
-* @param userDollarAmount -
-* @param userChoices[] -
-* @param foreignValues -
-* @param Currency -
+* @param userDollarAmount - we carry the double value of USD from a previous function so that calculations can be done for the conversion of currency.
+* @param userChoices[] - we carry over the array [userChoices] to define which currencies we will be converting.
+* @param foreignValues[] - once the conversions are calculated we will store them in this array.
+* @param Currency - allowing any and all currencies to be used.
 */
 double* currencyConverter(double &userDollarAmount, int userChoices[], double foreignValues[], Currency &mexicanPesos, Currency &japeneseYen, Currency &euros, 
 Currency &canadianDollar, Currency &indianRupees, Currency &belizeDollar, Currency &cfpFranc, Currency &chineseYuan,
@@ -272,15 +270,14 @@ Currency &haitianGourde, Currency &russianRuble)
 }
 
 /**
-* TODO: FILL IN PARAMS!
 * * string currencyAssignment()
 
 * ? This function converts the [userChoices] into a switch case that stores the 'name of Currency' selected in an array [foreignTypes]
 * ?      to be displayed in the results() function within the chart.
 
-* @param userChoices[] -
-* @param foreignTypes[] -
-* @param Currency -
+* @param userChoices[] - we carry over this array to define which currencies we will be assigning to the chart that will be displayed in results().
+* @param foreignTypes[] - once the user choices have been determined the types of foreign currencies are then displayed via the charts in the result() function.
+* @param Currency - allowing any and all currencies to be used.
 */
 string* currencyAssignment(int userChoices[], string foreignTypes[], Currency &mexicanPesos, Currency &japeneseYen, Currency &euros, 
 Currency &canadianDollar, Currency &indianRupees, Currency &belizeDollar, Currency &cfpFranc, Currency &chineseYuan,
@@ -380,16 +377,15 @@ std::string center(const string s, const int w) {
 }
 
 /**
-* TODO: FILL IN PARAMS
 * * void results()
 
 * ? This function displays the results in a chart format (described in prd, prs, and center functions) by using a For-Loop
 * ?      that will cycle through each decision by the user and display the categories until the 5 choices are displayed.
 
-* @param userDollarAmount -
-* @param foreignTypes[] -
-* @param foreignValues[] -
-* @param Currency -
+* @param userDollarAmount - will display the amount the user chose to convert on the chart via 'USD'
+* @param foreignTypes[] - will display all of the types of currencies chosen by the user in order
+* @param foreignValues[] - will display the values of each foreign currency in chosen order 
+* @param Currency - allows any and all currencies to be accessed
 */
 void results(double &userDollarAmount, string foreignTypes[], double foreignValues[], Currency &mexicanPesos, Currency &japeneseYen, Currency &euros, 
 Currency &canadianDollar, Currency &indianRupees, Currency &belizeDollar, Currency &cfpFranc, Currency &chineseYuan,
