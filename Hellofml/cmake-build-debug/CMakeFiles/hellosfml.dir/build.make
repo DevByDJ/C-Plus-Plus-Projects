@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml
+CMAKE_SOURCE_DIR = C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/hellosfml.dir/depend.make
@@ -68,29 +68,29 @@ include CMakeFiles/hellosfml.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/hellosfml.dir/flags.make
 
-CMakeFiles/hellosfml.dir/moveball.cpp.obj: CMakeFiles/hellosfml.dir/flags.make
-CMakeFiles/hellosfml.dir/moveball.cpp.obj: CMakeFiles/hellosfml.dir/includes_CXX.rsp
-CMakeFiles/hellosfml.dir/moveball.cpp.obj: ../moveball.cpp
-CMakeFiles/hellosfml.dir/moveball.cpp.obj: CMakeFiles/hellosfml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hellosfml.dir/moveball.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hellosfml.dir/moveball.cpp.obj -MF CMakeFiles\hellosfml.dir\moveball.cpp.obj.d -o CMakeFiles\hellosfml.dir\moveball.cpp.obj -c C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\moveball.cpp
+CMakeFiles/hellosfml.dir/breakout.cpp.obj: CMakeFiles/hellosfml.dir/flags.make
+CMakeFiles/hellosfml.dir/breakout.cpp.obj: CMakeFiles/hellosfml.dir/includes_CXX.rsp
+CMakeFiles/hellosfml.dir/breakout.cpp.obj: ../breakout.cpp
+CMakeFiles/hellosfml.dir/breakout.cpp.obj: CMakeFiles/hellosfml.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hellosfml.dir/breakout.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hellosfml.dir/breakout.cpp.obj -MF CMakeFiles\hellosfml.dir\breakout.cpp.obj.d -o CMakeFiles\hellosfml.dir\breakout.cpp.obj -c C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml\breakout.cpp
 
-CMakeFiles/hellosfml.dir/moveball.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hellosfml.dir/moveball.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\moveball.cpp > CMakeFiles\hellosfml.dir\moveball.cpp.i
+CMakeFiles/hellosfml.dir/breakout.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hellosfml.dir/breakout.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml\breakout.cpp > CMakeFiles\hellosfml.dir\breakout.cpp.i
 
-CMakeFiles/hellosfml.dir/moveball.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hellosfml.dir/moveball.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\moveball.cpp -o CMakeFiles\hellosfml.dir\moveball.cpp.s
+CMakeFiles/hellosfml.dir/breakout.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hellosfml.dir/breakout.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml\breakout.cpp -o CMakeFiles\hellosfml.dir\breakout.cpp.s
 
 # Object files for target hellosfml
 hellosfml_OBJECTS = \
-"CMakeFiles/hellosfml.dir/moveball.cpp.obj"
+"CMakeFiles/hellosfml.dir/breakout.cpp.obj"
 
 # External object files for target hellosfml
 hellosfml_EXTERNAL_OBJECTS =
 
-hellosfml.exe: CMakeFiles/hellosfml.dir/moveball.cpp.obj
+hellosfml.exe: CMakeFiles/hellosfml.dir/breakout.cpp.obj
 hellosfml.exe: CMakeFiles/hellosfml.dir/build.make
 hellosfml.exe: /SFML-2.5.1/lib/libsfml-graphics-s-d.a
 hellosfml.exe: /SFML-2.5.1/lib/libsfml-window-s-d.a
@@ -99,7 +99,7 @@ hellosfml.exe: C:/SFML-2.5.1/lib/libfreetype.a
 hellosfml.exe: CMakeFiles/hellosfml.dir/linklibs.rsp
 hellosfml.exe: CMakeFiles/hellosfml.dir/objects1.rsp
 hellosfml.exe: CMakeFiles/hellosfml.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable hellosfml.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable hellosfml.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\hellosfml.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -111,6 +111,6 @@ CMakeFiles/hellosfml.dir/clean:
 .PHONY : CMakeFiles/hellosfml.dir/clean
 
 CMakeFiles/hellosfml.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\cmake-build-debug C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\cmake-build-debug C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\cmake-build-debug\CMakeFiles\hellosfml.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml\cmake-build-debug C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml\cmake-build-debug C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml\cmake-build-debug\CMakeFiles\hellosfml.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hellosfml.dir/depend
 

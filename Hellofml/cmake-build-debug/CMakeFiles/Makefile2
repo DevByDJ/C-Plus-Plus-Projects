@@ -44,19 +44,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml
+CMAKE_SOURCE_DIR = C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -80,14 +80,14 @@ clean: CMakeFiles/hellosfml.dir/clean
 CMakeFiles/hellosfml.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\hellosfml.dir\build.make CMakeFiles/hellosfml.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\hellosfml.dir\build.make CMakeFiles/hellosfml.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target hellosfml"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target hellosfml"
 .PHONY : CMakeFiles/hellosfml.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/hellosfml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml\cmake-build-debug\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/hellosfml.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/hellosfml.dir/rule
 
 # Convenience name for target.

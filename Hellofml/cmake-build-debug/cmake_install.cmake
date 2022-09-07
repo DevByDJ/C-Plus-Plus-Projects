@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Dmast/Documents/GitHub/C-Plus-Plus-Projects/Hellofml
+# Install script for directory: C:/Users/Dmast/AppData/Local/GitHubDesktop/Projects/C-Plus-Plus-Projects/Hellofml
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Dmast/Documents/GitHub/C-Plus-Plus-Projects/Hellofml/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Dmast/AppData/Local/GitHubDesktop/Projects/C-Plus-Plus-Projects/Hellofml/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

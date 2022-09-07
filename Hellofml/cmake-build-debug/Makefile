@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml
+CMAKE_SOURCE_DIR = C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\cmake-build-debug\CMakeFiles C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml\cmake-build-debug\CMakeFiles C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dmast\Documents\GitHub\C-Plus-Plus-Projects\Hellofml\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dmast\AppData\Local\GitHubDesktop\Projects\C-Plus-Plus-Projects\Hellofml\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,29 +128,29 @@ hellosfml/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\hellosfml.dir\build.make CMakeFiles/hellosfml.dir/build
 .PHONY : hellosfml/fast
 
-moveball.obj: moveball.cpp.obj
-.PHONY : moveball.obj
+breakout.obj: breakout.cpp.obj
+.PHONY : breakout.obj
 
 # target to build an object file
-moveball.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hellosfml.dir\build.make CMakeFiles/hellosfml.dir/moveball.cpp.obj
-.PHONY : moveball.cpp.obj
+breakout.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\hellosfml.dir\build.make CMakeFiles/hellosfml.dir/breakout.cpp.obj
+.PHONY : breakout.cpp.obj
 
-moveball.i: moveball.cpp.i
-.PHONY : moveball.i
+breakout.i: breakout.cpp.i
+.PHONY : breakout.i
 
 # target to preprocess a source file
-moveball.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hellosfml.dir\build.make CMakeFiles/hellosfml.dir/moveball.cpp.i
-.PHONY : moveball.cpp.i
+breakout.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\hellosfml.dir\build.make CMakeFiles/hellosfml.dir/breakout.cpp.i
+.PHONY : breakout.cpp.i
 
-moveball.s: moveball.cpp.s
-.PHONY : moveball.s
+breakout.s: breakout.cpp.s
+.PHONY : breakout.s
 
 # target to generate assembly for a file
-moveball.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hellosfml.dir\build.make CMakeFiles/hellosfml.dir/moveball.cpp.s
-.PHONY : moveball.cpp.s
+breakout.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\hellosfml.dir\build.make CMakeFiles/hellosfml.dir/breakout.cpp.s
+.PHONY : breakout.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... hellosfml
-	@echo ... moveball.obj
-	@echo ... moveball.i
-	@echo ... moveball.s
+	@echo ... breakout.obj
+	@echo ... breakout.i
+	@echo ... breakout.s
 .PHONY : help
 
 
