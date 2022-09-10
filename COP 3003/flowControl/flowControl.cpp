@@ -9,6 +9,7 @@ int main()
 {
   int solution;
 
+  // flow controlled loop that outputs six different solutions
   for(int i = 0; i < 6 ; i++)
   {
     solution = 5 * i;

@@ -40,6 +40,8 @@ int main() {
     }
 
 
+
+
 }
 
 int digitCounter(int userInput, int digitCount)
@@ -50,7 +52,6 @@ int digitCounter(int userInput, int digitCount)
         userInput = userInput / 10;
         digitCount++;
     }
-
     return digitCount;
 
 }
