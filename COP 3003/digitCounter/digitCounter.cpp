@@ -2,25 +2,24 @@
 #include <string>
 #include <cmath>
 
-
-
 using namespace std;
 
-int digitCounter(int userInput, int digitCount);
+int sumOfDigits(int n);
 
-// C++ program to find sum of
-// digits of a number until
-// sum becomes single digit.
+int main()
+{
+	int n;
+	cout << "Enter in a number: ";
+	cin >> n;
 
-using namespace std;
+	cout << endl << sumOfDigits(n) << endl;
+	return 0;
+}
 
-int digSum(int n)
+int sumOfDigits(int n)
 {
 	int sum = 0;
 	
-	// Loop to do sum while
-	// sum is not less than
-	// or equal to 9
 	while(n > 0 || sum > 9)
 	{
 		if(n == 0)
@@ -32,12 +31,4 @@ int digSum(int n)
 		n /= 10;
 	}
 	return sum;
-}
-
-// Driver program to test the above function
-int main()
-{
-	int n = 1234;
-	cout << digSum(n);
-	return 0;
 }
