@@ -2,56 +2,42 @@
 #include <string>
 #include <cmath>
 
+
+
 using namespace std;
 
 int digitCounter(int userInput, int digitCount);
 
-int main() {
+// C++ program to find sum of
+// digits of a number until
+// sum becomes single digit.
 
-    int userInput;
-    int digitCount;
-    int newNumberCount;
-    int currentElement;
-    int solution[0];
-    
-    cout << "Enter a number: ";
-    cin >> userInput;
+using namespace std;
 
-    digitCounter(userInput, digitCount);
-
-    for(int i = digitCount; i == 0; i--)
-    {
-        int solution [i];
-        currentElement = i - 1;
-
-        solution[currentElement] = userInput % 10;
-        userInput = userInput / 10;
-
-        newNumberCount++;
-
-        return solution[i];
-    }
-
-    for(int i = 0; i < newNumberCount; i++)
-    {
-        currentElement = i - 1;
-        int newSolution[i];
-        newSolution[0] = solution[i] + solution[currentElement];
-    }
-
-
-
-
+int digSum(int n)
+{
+	int sum = 0;
+	
+	// Loop to do sum while
+	// sum is not less than
+	// or equal to 9
+	while(n > 0 || sum > 9)
+	{
+		if(n == 0)
+		{
+			n = sum;
+			sum = 0;
+		}
+		sum += n % 10;
+		n /= 10;
+	}
+	return sum;
 }
 
-int digitCounter(int userInput, int digitCount)
+// Driver program to test the above function
+int main()
 {
-
-    while(digitCount != 0)
-    {
-        userInput = userInput / 10;
-        digitCount++;
-    }
-    return digitCount;
-
+	int n = 1234;
+	cout << digSum(n);
+	return 0;
 }
