@@ -11,7 +11,7 @@ bool isImaginery = false;
 // -- FUNCTION INTIALIZATION --
 float quadraticFormula(float a, float b, float c);
 
-
+// comment test
 int main() {
 
     bool gameOver = false;
