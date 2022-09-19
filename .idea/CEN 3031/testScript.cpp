@@ -1,1 +1,1 @@
-cout << "Hello world";
+#include<iostream>
