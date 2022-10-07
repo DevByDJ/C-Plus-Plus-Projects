@@ -18,13 +18,13 @@ int main ()
 
     // -- intialize variables --
     bool validChoice;
-    double value, userSelection;
+    double referenceValue, userSelection;
     string continueProgram;
 
 
     while(!validChoice)
     {
-      
+
       cout << endl << "Make a selection:";
       cout << endl << "1.) Return by Value";
       cout << endl << "2.) Return by Reference";
@@ -47,10 +47,10 @@ int main ()
       {
         // -- INPUT --
         cout << endl << "Enter a number: ";
-        cin >> value;
+        cin >> referenceValue;
 
         // -- OUTPUT --
-        cout << endl << "The result is: " << getSquareUsingRetRef(value) << endl << endl;
+        cout << endl << "The result is: " << getSquareUsingRetRef(referenceValue) << endl << endl;
         validChoice = true;
       }
       else
@@ -96,9 +96,9 @@ double getSquareUsingRetVal()
 }
 
 // Takes a double value and squares then returns by reference.
-double getSquareUsingRetRef(double &value)
+double getSquareUsingRetRef(double &reference)
 {
-  value = pow(value, 2);
+  reference = pow(reference, 2);
 
-  return value;
+  return reference;
 }
