@@ -9,9 +9,9 @@
         ""
       ],
       "stopAtEntry": false,
-      "cwd": "/home/djoseph/C-Plus-Plus-Projects/COP 3003/Quadratic Formula",
+      "cwd": "/home/djoseph/C-Plus-Plus-Projects/CEN 3031",
       "environment": [],
-      "program": "/home/djoseph/C-Plus-Plus-Projects/COP 3003/Quadratic Formula/build/Debug/outDebug",
+      "program": "/home/djoseph/C-Plus-Plus-Projects/CEN 3031/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
       "miDebuggerPath": "/usr/bin/gdb",
