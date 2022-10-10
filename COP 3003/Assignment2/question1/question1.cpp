@@ -6,7 +6,7 @@ using namespace std;
 
 // Prototype function
 double getSquareUsingRetVal();
-double getSquareUsingRetRef(double &value);
+double getSquareUsingRetRef(double &reference);
 
 
 int main ()
