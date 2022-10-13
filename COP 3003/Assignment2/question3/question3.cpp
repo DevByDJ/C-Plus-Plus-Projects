@@ -44,6 +44,15 @@ int main()
         cout << endl << "Please enter a number: ";
         cin >> arrayOfInputs[i];
 
+        // -- CATCH ERROR --
+        while(cin.fail())
+        {
+            cout << endl << "Err: You must enter a number!" << endl << endl;
+            cin.clear();
+            cin.ignore(256, '\n');
+            cin >> arrayOfInputs[i];
+        }
+
     }
 
 
