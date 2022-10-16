@@ -4,6 +4,7 @@
 **/
 
 #include<iostream>
+
 using namespace std;
 
 void bubbleSort(int arr[], int numberOfElements);
@@ -53,8 +54,9 @@ int main ()
     
     bubbleSort(arrayOfInputs, numberOfElements);
 
+    // -- OUTPUT --
     cout<< endl << "Sorted Array : ";
-    for(int i=0;i<numberOfElements;i++)                            // Print the Sorted Array
+    for(int i=0;i<numberOfElements;i++)
         cout<<arrayOfInputs[i]<<" ";
     
     cout << endl;
@@ -62,26 +64,28 @@ int main ()
     return 0;
 }
 
+
 void bubbleSort(int arr[], int numberOfElements)
 {
     int i, j;
-    bool flag;
-    // Outer pass
+    bool isSwap;
+    // Checking each original element position
     for(i = 0; i < numberOfElements; i++)
     {
-        flag = false;                                   // Set flag as false
+        isSwap = false;                                
         for(j = 0; j < numberOfElements-i-1; j++)
         {
             // Compare values
             if( arr[j] < arr[j+1])
             {
                 swap(arr[j],arr[j+1]);
-                flag = true;
+                isSwap = true;
             }
         }
+        
         // If no to elements are swapped then
         // array is sorted. Hence Break the loop.
-        if(!flag)
+        if(!isSwap)
         {
             break;
         }
