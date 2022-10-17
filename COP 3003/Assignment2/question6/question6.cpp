@@ -83,8 +83,7 @@ void bubbleSort(int arr[], int numberOfElements)
             }
         }
         
-        // If no to elements are swapped then
-        // array is sorted. Hence Break the loop.
+        // If no to elements are swapped then the array is sorted.
         if(!isSwap)
         {
             break;
