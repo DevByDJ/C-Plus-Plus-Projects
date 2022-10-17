@@ -36,9 +36,10 @@ int main()
     }
 
     /*
+    * Creating an array using DYNAMIC MEMORY ALLOCATION!
     * Assign the number of elements to the array and collect the user inputs
     * in a loop until the user reaches the maximum amount of elements.
-    ! REQ: ONLY ACCEPT NUMBERS
+    ! REQ: ONLY ACCEPT NUMBERS BETWEEN 1 and 100
     **/
     double* arrayOfInputs = NULL;
     arrayOfInputs = new double[numberOfElements];
@@ -48,8 +49,8 @@ int main()
         cout << endl << "Please enter a number: ";
         cin >> arrayOfInputs[i];
 
-        // -- CATCH ERROR --
-        while(cin.fail())
+        // -- CATCH ERROR BASED ON REQ --
+        while(cin.fail() || arrayOfInputs[i] < 1 || arrayOfInputs[i] > 100)
         {
             cout << endl << "Err: You must enter a number!" << endl << endl;
             cin.clear();
@@ -62,6 +63,8 @@ int main()
     // -- SORTS THE ARRAY FROM LOWEST TO HIGHEST VALUES --
     sort(arrayOfInputs, arrayOfInputs + numberOfElements);
 
+
+    // -- OUTPUT --
     cout << "Your sorted array: ";
 
     for(int i = 0; i < numberOfElements; i++)
@@ -70,7 +73,10 @@ int main()
     }
 
     cout << endl;
+
+    // -- DYNAMICALLY REMOVE MEMORY ALOCATION --
     delete [] arrayOfInputs;
+
     return 0;
 
 }
