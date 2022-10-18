@@ -28,6 +28,8 @@
     "**/.vscode/**"
   ],
   "files.associations": {
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "ios": "cpp",
+    "iostream": "cpp"
   }
 }
