@@ -41,6 +41,7 @@ class Student
   {
     cout << endl << "Enter your ID number: ";
     cin >> id;
+    cin.ignore(1,'\n');
 
     // -- CATCH ERROR --
     while(cin.fail())
@@ -50,12 +51,14 @@ class Student
       cin.ignore(256, '\n');
       cin >> id;
     }
+
   };
 
   void getAge()
   {
     cout << endl << "Enter your age: ";
     cin >> age;
+    cin.ignore(1,'\n');
 
     // -- CATCH ERROR --
     while(cin.fail())
@@ -78,6 +81,7 @@ class Student
     {
       cout << endl << "Err: Invalid submission" << endl << endl;
       cin.clear();
+      cin.ignore(256, '\n');
       getline(cin, name);
     }
 
@@ -93,7 +97,7 @@ class Student
     {
       cout << endl << "Err: Invalid submission" << endl << endl;
       cin.clear();
-      cin.ignore('\n');
+      cin.ignore(256, '\n');
       getline(cin, yearOfStudy);
     };
 
@@ -109,7 +113,7 @@ class Student
     {
       cout << endl << "Err: Invalid submission" << endl << endl;
       cin.clear();
-      cin.ignore('\n');
+      cin.ignore(256, '\n');
       getline(cin, discipline);
     }
 
