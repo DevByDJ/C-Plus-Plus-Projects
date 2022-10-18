@@ -29,14 +29,14 @@ double factorialOfNumber(double number);
 
 int main()
 {
-    // -- OBJECT & VARIABLE DECLARATION --
+    // !-- OBJECT & VARIABLE DECLARATION --
     UserInput userInput;
     double number, result;
 
-    // -- INPUT USING THE CLASS METHOD --
+    // !-- INPUT USING THE CLASS METHOD --
     number = userInput.getNumber();
 
-    // -- CALCULATIONS USING METHOD OUTSIDE CLASS --
+    // !-- CALCULATIONS USING METHOD OUTSIDE CLASS --
     result = factorialOfNumber(number);
 
     // -- OUTPUT --
