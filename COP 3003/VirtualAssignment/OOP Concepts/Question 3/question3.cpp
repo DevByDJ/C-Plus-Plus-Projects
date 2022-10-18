@@ -26,8 +26,9 @@ class UserInput
   ? userSelection: determines the menu selection route and follows a case-switch logic
   ! REQ: MUST BE A 1 or 2 answer for the logic to work correctly
   **/
-  void getUserMenuChoice()
+  void getUserMenuChoice(int &methodCounter)
   {
+    methodCounter++;
     int userSelection;
 
     cout << endl << "Make a selection:";
@@ -52,7 +53,7 @@ class UserInput
         case choseDouble:
         // -- INPUT --
         double resultOfDub;
-        resultOfDub = getSquareUsingDouble();
+        resultOfDub = getSquareUsingDouble(methodCounter);
          // -- OUTPUT --
         cout << endl << "The result is: " << resultOfDub << endl << endl;
         break;
@@ -60,7 +61,7 @@ class UserInput
         case choseInteger:
         // -- INPUT --
         int resultOfInt;
-        resultOfInt = getSquareUsingInteger();
+        resultOfInt = getSquareUsingInteger(methodCounter);
          // -- OUTPUT --
         cout << endl << "The result is: " << resultOfInt << endl << endl;
         break;
@@ -69,8 +70,9 @@ class UserInput
   }
    
   // Takes a double value and squares then returns by value.
-  double getSquareUsingDouble()
+  double getSquareUsingDouble(int &methodCounter)
   {
+    methodCounter++;
     double value;
 
     cout << endl << "Enter a number: ";
@@ -90,8 +92,9 @@ class UserInput
   };
 
   // Takes a int value and squares then returns by value.
-  double getSquareUsingInteger()
+  double getSquareUsingInteger(int &methodCounter)
   {
+    methodCounter++;
     int value;
 
     cout << endl << "Enter a number: ";
@@ -111,8 +114,9 @@ class UserInput
   };
 
   // Determines if the user would like to try again.
-  bool playAgain(bool &userChoice)
+  bool playAgain(bool &userChoice, int &methodCounter)
   {
+    methodCounter++;
     string userDecision;
     cout << "Try Again? Y/n ";
     cin >> userDecision;
@@ -149,14 +153,18 @@ int main()
 
   UserInput userInput;
 
+  int methodCounter;
+
   bool runningProgram = 1;
 
   while(runningProgram)
   {
-    userInput.getUserMenuChoice();
+    userInput.getUserMenuChoice(methodCounter);
 
-    userInput.playAgain(runningProgram);
+    userInput.playAgain(runningProgram, methodCounter);
   }
+
+  cout << endl << "Methods counted: " << methodCounter << endl;
 
   return 0;
 }
