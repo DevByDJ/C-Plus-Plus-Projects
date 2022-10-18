@@ -23,7 +23,7 @@ class UserInput
 
   /*
   * Defines the path the user will take to calculate the square of a number
-  @param userSelection: determines the menu selection route and follows a case-switch logic
+  ? userSelection: determines the menu selection route and follows a case-switch logic
   ! REQ: MUST BE A 1 or 2 answer for the logic to work correctly
   **/
   void getUserMenuChoice()
