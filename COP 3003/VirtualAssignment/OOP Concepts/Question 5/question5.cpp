@@ -12,9 +12,15 @@ using namespace std;
 class Student
 {
   public:
+
+  // -- Variable Declaration --
   int id, age;
   string name, yearOfStudy, discipline;
 
+  /*
+  * getStudentInfo() runs all of the get methods created to obtain the information of a
+  * new student.
+  **/
   void getStudentInfo()
   {
     getID();
@@ -24,6 +30,9 @@ class Student
     getDiscipline();
   };
 
+  /*
+  * displayStudentInfo() displays the information obtained by getStudentInfo()
+  **/
   void displayStudentInfo()
   {
     cout << endl << "===== NEW STUDENT ======";
@@ -36,6 +45,7 @@ class Student
     cout << endl << "=========================" << endl;
 
   };
+
 
   void getID()
   {
@@ -61,7 +71,7 @@ class Student
     cin.ignore(1,'\n');
 
     // -- CATCH ERROR --
-    while(cin.fail())
+    while(cin.fail()) 
     {
       cout << endl << "Err: You must enter a number!" << endl << endl;
       cin.clear();
@@ -133,6 +143,16 @@ int main()
   int numberOfStudents;
   cout << "Enter the amount of students you would like to create: ";
   cin >> numberOfStudents;
+
+  // -- CATCH ERROR --
+    while(cin.fail())
+    {
+      cout << endl << "Err: You must enter a number!" << endl << endl;
+      cin.clear();
+      cin.ignore(256, '\n');
+      cin >> id;
+    }
+
 
   /*
   * Assign the number of elements to the array and collect the user inputs
