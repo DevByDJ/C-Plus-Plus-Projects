@@ -28,9 +28,15 @@
     "**/.vscode/**"
   ],
   "files.associations": {
+    "*.ejs": "html",
     "ostream": "cpp",
     "ios": "cpp",
     "iostream": "cpp",
-    "string": "cpp"
+    "string": "cpp",
+    "xstring": "cpp",
+    "algorithm": "cpp",
+    "xiosbase": "cpp",
+    "xlocale": "cpp",
+    "xutility": "cpp"
   }
 }
