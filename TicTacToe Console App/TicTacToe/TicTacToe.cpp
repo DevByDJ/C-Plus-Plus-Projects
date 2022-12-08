@@ -10,20 +10,26 @@
 
 using namespace std;
 
-int startMenu();
+void startMenu();
 
 int playerDecision();
+
+bool tileAvailability(int selectedTile);
 
 int main() {
 
 	startMenu();
 
-	playerDecision();
-	
+	int playerChoice = playerDecision();
+	while (!tileAvailability(playerChoice)) {
+		cout << "Tile not available. Please choose another tile: ";
+		cin >> playerChoice;
+	}
+
 	return 0;
 }
 
-int startMenu() {
+void startMenu() {
 	
 	/*
 	Defining the TicTacToe game board by using console outputs
@@ -39,37 +45,47 @@ int startMenu() {
 	string divider = "--------------------";
 	string gameRules = "Choose 3 connecting tiles to win";
 
-	std::cout << gameTitle << endl;
-	std::cout << titleDivider << endl;
-	std::cout << firstRow << endl;
-	std::cout << secondRow << endl;
-	std::cout << thirdRow << endl;
-	std::cout << divider << endl;
-	std::cout << endl;
-	std::cout << gameRules << endl;
-	std::cout << endl;
-
-	return 0;
+	cout << gameTitle << endl;
+	cout << titleDivider << endl;
+	cout << firstRow << endl;
+	cout << secondRow << endl;
+	cout << thirdRow << endl;
+	cout << divider << endl;
+	cout << endl;
+	cout << gameRules << endl;
+	cout << endl;
 }
 
 int playerDecision() {
 	
 	/*
-	[Available Tile Logic]
-    This while loop will check available tiles and handle whether
-    the player can proceed or need to re-enter a new input. 
+	[Player Decision]
+	This function will prompt the player to enter a tile 
+	choice and return the value to the main function...
 	*/
 
-	int playerDecisionMade;
-	std::cout << "Choose a tile: ";
-	std::cin >> playerDecisionMade;
+	int playerChoice;
+	cout << "Choose a tile: ";
+	cin >> playerChoice;
 
-	return 0;
+	return playerChoice;
 }
 
-int tileAvailability() {
+bool tileAvailability(int selectedTile) {
 
-	// int currentAvailableTiles[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+	// Define an array of available tiles
+	int currentAvailableTiles[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
+	// Check if the selected tile is in the array of available tiles
+	for (int i = 0; i < sizeof(currentAvailableTiles); i++) {
+		if (selectedTile == currentAvailableTiles[i]) {
+			// If the tile is available, remove it from the array and return true
+			currentAvailableTiles[i] = 0;
+			return true;
+		}
+	}
+
+	// If the tile is not in the array, it is not available and the function returns false
+	return false;
 }
 
