@@ -1,3 +1,6 @@
+# Danny Joseph
+# CEN 3078 - Computer Security 
+
 from string import printable
 if __name__ == "__main__":
     
@@ -55,20 +58,14 @@ if __name__ == "__main__":
     
     transformed = ""
     for token in phrase:
-        # check if valid symbol and where its index is
         if token in codex:
             tokenidx = codex.find(token)
-            #print(tokenidx) # uncomment to check
-            # Perform either encryption or decryption (change this to check your work)
-            # this is the main encryption so when "hacking" think - how could I check all of them?
-            # Handle any wraparound (using % operator)
             if mode == 'e':
                 transformidx = (tokenidx + key) % len(codex)
             else:
                 transformidx = (tokenidx - key) % len(codex)
             transformed += codex[transformidx]
         else:
-            # technically could have a unicode char or something so we'll just append that raw
             transformed += token
 
     print(transformed)
